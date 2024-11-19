@@ -1,0 +1,97 @@
+Jun 02 09:13:10.576 HYPERVISOR: Release 0.2.17-x86/Windows (tag 2017072410)
+Jun 02 09:13:10.577 HYPERVISOR: Started on IP = localhost, TCP port = 49725.
+Jun 02 09:13:11.058 HYPERVISOR: exec_cmd: hypervisor version 
+Jun 02 09:13:11.058 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\rafam\OneDrive\Ambiente de Trabalho\RT\Projeto RT\projetoGNS\project-files\dynamips 
+Jun 02 09:13:11.059 GENERAL: working_dir=C:\Users\rafam\OneDrive\Ambiente de Trabalho\RT\Projeto RT\projetoGNS\project-files\dynamips
+Jun 02 09:13:11.059 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\rafam\OneDrive\Ambiente de Trabalho\RT\Projeto RT\projetoGNS\project-files\dynamips\98e1d958-e4d9-435b-b89a-13ca73977bed 
+Jun 02 09:13:11.094 GENERAL: working_dir=C:\Users\rafam\OneDrive\Ambiente de Trabalho\RT\Projeto RT\projetoGNS\project-files\dynamips\98e1d958-e4d9-435b-b89a-13ca73977bed
+Jun 02 09:13:11.094 HYPERVISOR: exec_cmd: vm create R2 1 c7200 
+Jun 02 09:13:11.096 VM: VM R2 created.
+Jun 02 09:13:11.098 HYPERVISOR: exec_cmd: vm set_con_tcp_port R2 5003 
+Jun 02 09:13:11.098 HYPERVISOR: exec_cmd: c7200 get_mac_addr R2 
+Jun 02 09:13:11.098 HYPERVISOR: exec_cmd: vm get_status R2 
+Jun 02 09:13:11.099 HYPERVISOR: exec_cmd: vm slot_add_binding R2 0 0 C7200-IO-FE 
+Jun 02 09:13:11.099 HYPERVISOR: exec_cmd: vm set_disk0 R2 0 
+Jun 02 09:13:11.100 HYPERVISOR: exec_cmd: vm set_exec_area R2 64 
+Jun 02 09:13:11.100 HYPERVISOR: exec_cmd: vm get_status R2 
+Jun 02 09:13:11.101 HYPERVISOR: exec_cmd: vm set_idle_pc R2 0x601712a8 
+Jun 02 09:13:11.103 HYPERVISOR: exec_cmd: vm set_ios R2 C:/Users/rafam/GNS3/images/IOS/c7200-adventerprisek9-mz.151-4.M2.image 
+Jun 02 09:13:11.103 HYPERVISOR: exec_cmd: c7200 set_mac_addr R2 ca01.4b30.0000 
+Jun 02 09:13:11.105 HYPERVISOR: exec_cmd: vm set_nvram R2 512 
+Jun 02 09:13:11.105 HYPERVISOR: exec_cmd: vm set_ram R2 512 
+Jun 02 09:13:11.106 HYPERVISOR: exec_cmd: vm get_status R2 
+Jun 02 09:13:11.106 HYPERVISOR: exec_cmd: vm slot_add_binding R2 1 0 PA-2FE-TX 
+Jun 02 09:13:14.196 HYPERVISOR: exec_cmd: nio create_udp udp-1ce2aed2-a453-401e-8977-f490b3c34b02 10004 127.0.0.1 10005 
+Jun 02 09:13:14.578 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R2 0 0 udp-1ce2aed2-a453-401e-8977-f490b3c34b02 
+Jun 02 09:13:14.579 HYPERVISOR: exec_cmd: vm get_status R2 
+Jun 02 09:13:15.604 HYPERVISOR: exec_cmd: nio create_udp udp-c15d3511-8819-4763-8d79-2897254b4fea 10020 127.0.0.1 10021 
+Jun 02 09:13:15.609 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R2 1 0 udp-c15d3511-8819-4763-8d79-2897254b4fea 
+Jun 02 09:13:15.609 HYPERVISOR: exec_cmd: vm get_status R2 
+Jun 02 09:13:33.141 HYPERVISOR: exec_cmd: vm create Ghost 0 c7200 
+Jun 02 09:13:33.145 VM: VM Ghost created.
+Jun 02 09:13:33.148 HYPERVISOR: exec_cmd: vm set_ios Ghost C:/Users/rafam/GNS3/images/IOS/c7200-adventerprisek9-mz.151-4.M2.image 
+Jun 02 09:13:33.150 HYPERVISOR: exec_cmd: vm set_ghost_status Ghost 1 
+Jun 02 09:13:33.150 HYPERVISOR: exec_cmd: vm set_ghost_file Ghost C:\Users\rafam\OneDrive\Ambiente de Trabalho\RT\Projeto RT\projetoGNS\project-files\dynamips\c7200-adventerprisek9-mz.151-4.M2.image-512.ghost 
+Jun 02 09:13:33.151 HYPERVISOR: exec_cmd: vm set_ram Ghost 512 
+Jun 02 09:13:33.152 HYPERVISOR: exec_cmd: vm get_status Ghost 
+Jun 02 09:13:33.168 HYPERVISOR: exec_cmd: vm set_config Ghost configs\i0_startup-config.cfg 
+Jun 02 09:13:33.168 HYPERVISOR: exec_cmd: vm start Ghost 
+Jun 02 09:13:33.746 HYPERVISOR: exec_cmd: vm get_status Ghost 
+Jun 02 09:13:33.748 HYPERVISOR: exec_cmd: vm stop Ghost 
+Jun 02 09:13:33.845 VM: VM Ghost shutdown.
+Jun 02 09:13:33.846 HYPERVISOR: exec_cmd: vm extract_config Ghost 
+Jun 02 09:13:33.849 HYPERVISOR: exec_cmd: vm clean_delete Ghost 
+Jun 02 09:13:33.849 VM: VM Ghost destroyed.
+Jun 02 09:13:33.859 HYPERVISOR: exec_cmd: vm set_ghost_status R2 2 
+Jun 02 09:13:33.860 HYPERVISOR: exec_cmd: vm set_ghost_file R2 C:\Users\rafam\OneDrive\Ambiente de Trabalho\RT\Projeto RT\projetoGNS\project-files\dynamips\c7200-adventerprisek9-mz.151-4.M2.image-512.ghost 
+Jun 02 09:13:33.860 HYPERVISOR: exec_cmd: vm get_status R2 
+Jun 02 09:13:33.863 HYPERVISOR: exec_cmd: vm set_config R2 configs\i1_startup-config.cfg configs\i1_private-config.cfg 
+Jun 02 09:13:33.864 HYPERVISOR: exec_cmd: vm start R2 
+Jun 02 09:14:04.222 HYPERVISOR: exec_cmd: vm extract_config R2 
+Jun 02 09:40:24.747 HYPERVISOR: exec_cmd: vm set_ghost_status R2 2 
+Jun 02 09:40:24.763 HYPERVISOR: exec_cmd: vm set_ghost_file R2 C:\Users\rafam\OneDrive\Ambiente de Trabalho\RT\Projeto RT\projetoGNS\project-files\dynamips\c7200-adventerprisek9-mz.151-4.M2.image-512.ghost 
+Jun 02 09:40:24.765 HYPERVISOR: exec_cmd: vm get_status R2 
+Jun 02 10:39:20.330 HYPERVISOR: exec_cmd: vm get_status R2 
+Jun 02 10:39:20.332 HYPERVISOR: exec_cmd: vm stop R2 
+Jun 02 10:39:20.497 VM: VM R2 shutdown.
+Jun 02 10:39:20.498 HYPERVISOR: exec_cmd: vm extract_config R2 
+Jun 02 10:40:55.704 HYPERVISOR: exec_cmd: vm set_ghost_status R2 2 
+Jun 02 10:40:55.704 HYPERVISOR: exec_cmd: vm set_ghost_file R2 C:\Users\rafam\OneDrive\Ambiente de Trabalho\RT\Projeto RT\projetoGNS\project-files\dynamips\c7200-adventerprisek9-mz.151-4.M2.image-512.ghost 
+Jun 02 10:40:55.720 HYPERVISOR: exec_cmd: vm get_status R2 
+Jun 02 10:40:55.720 HYPERVISOR: exec_cmd: vm set_config R2 configs\i1_startup-config.cfg configs\i1_private-config.cfg 
+Jun 02 10:40:55.720 HYPERVISOR: exec_cmd: vm start R2 
+Jun 02 12:05:22.636 HYPERVISOR: exec_cmd: vm get_status R2 
+Jun 02 12:05:22.642 HYPERVISOR: exec_cmd: vm stop R2 
+Jun 02 12:05:22.887 VM: VM R2 shutdown.
+Jun 02 12:05:22.890 HYPERVISOR: exec_cmd: vm extract_config R2 
+Jun 02 12:05:23.995 HYPERVISOR: exec_cmd: vm set_ghost_status R2 2 
+Jun 02 12:05:24.023 HYPERVISOR: exec_cmd: vm set_ghost_file R2 C:\Users\rafam\OneDrive\Ambiente de Trabalho\RT\Projeto RT\projetoGNS\project-files\dynamips\c7200-adventerprisek9-mz.151-4.M2.image-512.ghost 
+Jun 02 12:05:24.028 HYPERVISOR: exec_cmd: vm get_status R2 
+Jun 02 12:05:24.037 HYPERVISOR: exec_cmd: vm set_config R2 configs\i1_startup-config.cfg configs\i1_private-config.cfg 
+Jun 02 12:05:24.038 HYPERVISOR: exec_cmd: vm start R2 
+Jun 02 12:05:28.316 HYPERVISOR: exec_cmd: vm set_ghost_status R2 2 
+Jun 02 12:05:28.317 HYPERVISOR: exec_cmd: vm set_ghost_file R2 C:\Users\rafam\OneDrive\Ambiente de Trabalho\RT\Projeto RT\projetoGNS\project-files\dynamips\c7200-adventerprisek9-mz.151-4.M2.image-512.ghost 
+Jun 02 12:05:28.319 HYPERVISOR: exec_cmd: vm get_status R2 
+Jun 02 12:25:31.676 HYPERVISOR: exec_cmd: vm set_ghost_status R2 2 
+Jun 02 12:25:31.676 HYPERVISOR: exec_cmd: vm set_ghost_file R2 C:\Users\rafam\OneDrive\Ambiente de Trabalho\RT\Projeto RT\projetoGNS\project-files\dynamips\c7200-adventerprisek9-mz.151-4.M2.image-512.ghost 
+Jun 02 12:25:31.676 HYPERVISOR: exec_cmd: vm get_status R2 
+Jun 02 12:26:04.183 HYPERVISOR: exec_cmd: vm get_status R2 
+Jun 02 12:26:04.188 HYPERVISOR: exec_cmd: vm stop R2 
+Jun 02 12:26:04.462 VM: VM R2 shutdown.
+Jun 02 12:26:04.467 HYPERVISOR: exec_cmd: vm extract_config R2 
+Jun 02 12:26:05.774 HYPERVISOR: exec_cmd: vm set_ghost_status R2 2 
+Jun 02 12:26:05.795 HYPERVISOR: exec_cmd: vm set_ghost_file R2 C:\Users\rafam\OneDrive\Ambiente de Trabalho\RT\Projeto RT\projetoGNS\project-files\dynamips\c7200-adventerprisek9-mz.151-4.M2.image-512.ghost 
+Jun 02 12:26:05.798 HYPERVISOR: exec_cmd: vm get_status R2 
+Jun 02 12:26:05.802 HYPERVISOR: exec_cmd: vm set_config R2 configs\i1_startup-config.cfg configs\i1_private-config.cfg 
+Jun 02 12:26:05.804 HYPERVISOR: exec_cmd: vm start R2 
+Jun 02 12:47:32.949 HYPERVISOR: exec_cmd: vm get_status R2 
+Jun 02 12:47:32.951 HYPERVISOR: exec_cmd: vm stop R2 
+Jun 02 12:47:33.093 VM: VM R2 shutdown.
+Jun 02 12:47:33.095 HYPERVISOR: exec_cmd: vm extract_config R2 
+Jun 02 12:47:34.803 HYPERVISOR: exec_cmd: vm get_status R2 
+Jun 02 12:47:34.804 HYPERVISOR: exec_cmd: vm extract_config R2 
+Jun 02 12:47:34.806 HYPERVISOR: exec_cmd: vm delete R2 
+Jun 02 12:47:34.806 VM: VM R2 destroyed.
+Jun 02 12:47:34.809 HYPERVISOR: exec_cmd: hypervisor stop 
+Jun 02 12:47:34.891 HYPERVISOR: Stopped.
+Jun 02 12:47:34.891 GENERAL: reset done.

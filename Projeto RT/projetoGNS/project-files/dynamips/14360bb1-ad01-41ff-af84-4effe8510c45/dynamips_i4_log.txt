@@ -1,0 +1,115 @@
+Jun 02 09:13:11.790 HYPERVISOR: Release 0.2.17-x86/Windows (tag 2017072410)
+Jun 02 09:13:11.791 HYPERVISOR: Started on IP = localhost, TCP port = 49731.
+Jun 02 09:13:12.286 HYPERVISOR: exec_cmd: hypervisor version 
+Jun 02 09:13:12.286 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\rafam\OneDrive\Ambiente de Trabalho\RT\Projeto RT\projetoGNS\project-files\dynamips 
+Jun 02 09:13:12.286 GENERAL: working_dir=C:\Users\rafam\OneDrive\Ambiente de Trabalho\RT\Projeto RT\projetoGNS\project-files\dynamips
+Jun 02 09:13:12.287 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\rafam\OneDrive\Ambiente de Trabalho\RT\Projeto RT\projetoGNS\project-files\dynamips\998729b1-34a6-456b-b16b-d42e75da627b 
+Jun 02 09:13:12.287 GENERAL: working_dir=C:\Users\rafam\OneDrive\Ambiente de Trabalho\RT\Projeto RT\projetoGNS\project-files\dynamips\998729b1-34a6-456b-b16b-d42e75da627b
+Jun 02 09:13:12.288 HYPERVISOR: exec_cmd: vm create ESW1 3 c3725 
+Jun 02 09:13:12.290 VM: VM ESW1 created.
+Jun 02 09:13:12.290 HYPERVISOR: exec_cmd: vm set_con_tcp_port ESW1 5005 
+Jun 02 09:13:12.291 HYPERVISOR: exec_cmd: c3725 get_mac_addr ESW1 
+Jun 02 09:13:12.291 HYPERVISOR: exec_cmd: vm set_disk0 ESW1 1 
+Jun 02 09:13:12.291 HYPERVISOR: exec_cmd: vm set_exec_area ESW1 64 
+Jun 02 09:13:12.292 HYPERVISOR: exec_cmd: vm get_status ESW1 
+Jun 02 09:13:12.292 HYPERVISOR: exec_cmd: vm set_idle_pc ESW1 0x60236160 
+Jun 02 09:13:12.294 HYPERVISOR: exec_cmd: vm set_ios ESW1 C:/Users/rafam/GNS3/images/IOS/c3725-advipservicesk9-mz.124-21.image 
+Jun 02 09:13:12.295 HYPERVISOR: exec_cmd: c3725 set_mac_addr ESW1 c203.2934.0000 
+Jun 02 09:13:12.295 HYPERVISOR: exec_cmd: vm set_nvram ESW1 256 
+Jun 02 09:13:12.296 HYPERVISOR: exec_cmd: vm get_status ESW1 
+Jun 02 09:13:12.296 HYPERVISOR: exec_cmd: vm slot_add_binding ESW1 1 0 NM-16ESW 
+Jun 02 09:13:14.642 HYPERVISOR: exec_cmd: nio create_udp udp-e841d4ea-df36-491c-bc73-7a0cc0d9cedc 10008 127.0.0.1 10009 
+Jun 02 09:13:14.903 HYPERVISOR: exec_cmd: vm slot_add_nio_binding ESW1 1 0 udp-e841d4ea-df36-491c-bc73-7a0cc0d9cedc 
+Jun 02 09:13:14.904 HYPERVISOR: exec_cmd: vm get_status ESW1 
+Jun 02 09:13:15.628 HYPERVISOR: exec_cmd: nio create_udp udp-e9980a73-6b60-4d67-9240-f5cd106a87c2 10022 127.0.0.1 10023 
+Jun 02 09:13:15.632 HYPERVISOR: exec_cmd: vm slot_add_nio_binding ESW1 1 1 udp-e9980a73-6b60-4d67-9240-f5cd106a87c2 
+Jun 02 09:13:15.633 HYPERVISOR: exec_cmd: vm get_status ESW1 
+Jun 02 09:13:15.756 HYPERVISOR: exec_cmd: nio create_udp udp-40165760-692b-4210-a1f8-6b3d78f26258 10026 127.0.0.1 10027 
+Jun 02 09:13:15.759 HYPERVISOR: exec_cmd: vm slot_add_nio_binding ESW1 1 2 udp-40165760-692b-4210-a1f8-6b3d78f26258 
+Jun 02 09:13:15.760 HYPERVISOR: exec_cmd: vm get_status ESW1 
+Jun 02 09:13:33.867 HYPERVISOR: exec_cmd: vm create Ghost 0 c3725 
+Jun 02 09:13:33.869 VM: VM Ghost created.
+Jun 02 09:13:33.870 HYPERVISOR: exec_cmd: vm set_ios Ghost C:/Users/rafam/GNS3/images/IOS/c3725-advipservicesk9-mz.124-21.image 
+Jun 02 09:13:33.871 HYPERVISOR: exec_cmd: vm set_ghost_status Ghost 1 
+Jun 02 09:13:33.872 HYPERVISOR: exec_cmd: vm set_ghost_file Ghost C:\Users\rafam\OneDrive\Ambiente de Trabalho\RT\Projeto RT\projetoGNS\project-files\dynamips\c3725-advipservicesk9-mz.124-21.image-128.ghost 
+Jun 02 09:13:33.872 HYPERVISOR: exec_cmd: vm get_status Ghost 
+Jun 02 09:13:33.889 HYPERVISOR: exec_cmd: vm set_config Ghost configs\i0_startup-config.cfg 
+Jun 02 09:13:33.889 HYPERVISOR: exec_cmd: vm start Ghost 
+Jun 02 09:13:34.352 HYPERVISOR: exec_cmd: vm get_status Ghost 
+Jun 02 09:13:34.355 HYPERVISOR: exec_cmd: vm stop Ghost 
+Jun 02 09:13:34.553 VM: VM Ghost shutdown.
+Jun 02 09:13:34.565 HYPERVISOR: exec_cmd: vm extract_config Ghost 
+Jun 02 09:13:34.568 HYPERVISOR: exec_cmd: vm clean_delete Ghost 
+Jun 02 09:13:34.568 VM: VM Ghost destroyed.
+Jun 02 09:13:34.583 HYPERVISOR: exec_cmd: vm set_ghost_status ESW1 2 
+Jun 02 09:13:34.584 HYPERVISOR: exec_cmd: vm set_ghost_file ESW1 C:\Users\rafam\OneDrive\Ambiente de Trabalho\RT\Projeto RT\projetoGNS\project-files\dynamips\c3725-advipservicesk9-mz.124-21.image-128.ghost 
+Jun 02 09:13:34.584 HYPERVISOR: exec_cmd: vm get_status ESW1 
+Jun 02 09:13:34.587 HYPERVISOR: exec_cmd: vm set_config ESW1 configs\i3_startup-config.cfg 
+Jun 02 09:13:34.588 HYPERVISOR: exec_cmd: vm start ESW1 
+Jun 02 09:22:35.474 HYPERVISOR: exec_cmd: vm extract_config ESW1 
+Jun 02 09:22:35.529 HYPERVISOR: exec_cmd: vm extract_config ESW1 
+Jun 02 09:33:35.750 HYPERVISOR: exec_cmd: vm extract_config ESW1 
+Jun 02 09:33:35.789 HYPERVISOR: exec_cmd: vm extract_config ESW1 
+Jun 02 09:38:14.212 HYPERVISOR: exec_cmd: nio create_udp udp-65cf4402-6ef2-4fca-ba81-d094c67102d8 10068 127.0.0.1 10069 
+Jun 02 09:38:14.216 HYPERVISOR: exec_cmd: vm slot_add_nio_binding ESW1 1 3 udp-65cf4402-6ef2-4fca-ba81-d094c67102d8 
+Jun 02 09:38:14.217 HYPERVISOR: exec_cmd: vm get_status ESW1 
+Jun 02 09:38:14.217 HYPERVISOR: exec_cmd: vm slot_enable_nio ESW1 1 3 
+Jun 02 09:40:24.781 HYPERVISOR: exec_cmd: vm set_ghost_status ESW1 2 
+Jun 02 09:40:24.783 HYPERVISOR: exec_cmd: vm set_ghost_file ESW1 C:\Users\rafam\OneDrive\Ambiente de Trabalho\RT\Projeto RT\projetoGNS\project-files\dynamips\c3725-advipservicesk9-mz.124-21.image-128.ghost 
+Jun 02 09:40:24.785 HYPERVISOR: exec_cmd: vm get_status ESW1 
+Jun 02 09:49:36.122 HYPERVISOR: exec_cmd: vm extract_config ESW1 
+Jun 02 09:49:36.169 HYPERVISOR: exec_cmd: vm extract_config ESW1 
+Jun 02 10:19:06.826 HYPERVISOR: exec_cmd: vm extract_config ESW1 
+Jun 02 10:19:06.845 HYPERVISOR: exec_cmd: vm extract_config ESW1 
+Jun 02 10:20:36.878 HYPERVISOR: exec_cmd: vm extract_config ESW1 
+Jun 02 10:20:36.896 HYPERVISOR: exec_cmd: vm extract_config ESW1 
+Jun 02 10:39:20.511 HYPERVISOR: exec_cmd: vm get_status ESW1 
+Jun 02 10:39:20.511 HYPERVISOR: exec_cmd: vm stop ESW1 
+Jun 02 10:39:20.679 VM: VM ESW1 shutdown.
+Jun 02 10:39:20.680 HYPERVISOR: exec_cmd: vm extract_config ESW1 
+Jun 02 10:40:56.049 HYPERVISOR: exec_cmd: vm set_ghost_status ESW1 2 
+Jun 02 10:40:56.049 HYPERVISOR: exec_cmd: vm set_ghost_file ESW1 C:\Users\rafam\OneDrive\Ambiente de Trabalho\RT\Projeto RT\projetoGNS\project-files\dynamips\c3725-advipservicesk9-mz.124-21.image-128.ghost 
+Jun 02 10:40:56.049 HYPERVISOR: exec_cmd: vm get_status ESW1 
+Jun 02 10:40:56.049 HYPERVISOR: exec_cmd: vm set_config ESW1 configs\i3_startup-config.cfg 
+Jun 02 10:40:56.049 HYPERVISOR: exec_cmd: vm start ESW1 
+Jun 02 10:50:26.603 HYPERVISOR: exec_cmd: vm extract_config ESW1 
+Jun 02 10:50:26.615 HYPERVISOR: exec_cmd: vm extract_config ESW1 
+Jun 02 11:09:45.920 HYPERVISOR: exec_cmd: vm get_status ESW1 
+Jun 02 11:09:45.921 HYPERVISOR: exec_cmd: vm slot_disable_nio ESW1 1 3 
+Jun 02 11:09:45.945 HYPERVISOR: exec_cmd: vm slot_remove_nio_binding ESW1 1 3 
+Jun 02 11:09:45.947 HYPERVISOR: exec_cmd: nio delete udp-65cf4402-6ef2-4fca-ba81-d094c67102d8 
+Jun 02 12:05:22.928 HYPERVISOR: exec_cmd: vm get_status ESW1 
+Jun 02 12:05:22.929 HYPERVISOR: exec_cmd: vm stop ESW1 
+Jun 02 12:05:23.110 VM: VM ESW1 shutdown.
+Jun 02 12:05:23.111 HYPERVISOR: exec_cmd: vm extract_config ESW1 
+Jun 02 12:05:24.383 HYPERVISOR: exec_cmd: vm set_ghost_status ESW1 2 
+Jun 02 12:05:24.384 HYPERVISOR: exec_cmd: vm set_ghost_file ESW1 C:\Users\rafam\OneDrive\Ambiente de Trabalho\RT\Projeto RT\projetoGNS\project-files\dynamips\c3725-advipservicesk9-mz.124-21.image-128.ghost 
+Jun 02 12:05:24.385 HYPERVISOR: exec_cmd: vm get_status ESW1 
+Jun 02 12:05:24.393 HYPERVISOR: exec_cmd: vm set_config ESW1 configs\i3_startup-config.cfg 
+Jun 02 12:05:24.394 HYPERVISOR: exec_cmd: vm start ESW1 
+Jun 02 12:05:28.331 HYPERVISOR: exec_cmd: vm set_ghost_status ESW1 2 
+Jun 02 12:05:28.332 HYPERVISOR: exec_cmd: vm set_ghost_file ESW1 C:\Users\rafam\OneDrive\Ambiente de Trabalho\RT\Projeto RT\projetoGNS\project-files\dynamips\c3725-advipservicesk9-mz.124-21.image-128.ghost 
+Jun 02 12:05:28.334 HYPERVISOR: exec_cmd: vm get_status ESW1 
+Jun 02 12:25:31.691 HYPERVISOR: exec_cmd: vm set_ghost_status ESW1 2 
+Jun 02 12:25:31.691 HYPERVISOR: exec_cmd: vm set_ghost_file ESW1 C:\Users\rafam\OneDrive\Ambiente de Trabalho\RT\Projeto RT\projetoGNS\project-files\dynamips\c3725-advipservicesk9-mz.124-21.image-128.ghost 
+Jun 02 12:25:31.691 HYPERVISOR: exec_cmd: vm get_status ESW1 
+Jun 02 12:26:04.478 HYPERVISOR: exec_cmd: vm get_status ESW1 
+Jun 02 12:26:04.484 HYPERVISOR: exec_cmd: vm stop ESW1 
+Jun 02 12:26:04.680 VM: VM ESW1 shutdown.
+Jun 02 12:26:04.682 HYPERVISOR: exec_cmd: vm extract_config ESW1 
+Jun 02 12:26:06.183 HYPERVISOR: exec_cmd: vm set_ghost_status ESW1 2 
+Jun 02 12:26:06.185 HYPERVISOR: exec_cmd: vm set_ghost_file ESW1 C:\Users\rafam\OneDrive\Ambiente de Trabalho\RT\Projeto RT\projetoGNS\project-files\dynamips\c3725-advipservicesk9-mz.124-21.image-128.ghost 
+Jun 02 12:26:06.186 HYPERVISOR: exec_cmd: vm get_status ESW1 
+Jun 02 12:26:06.187 HYPERVISOR: exec_cmd: vm set_config ESW1 configs\i3_startup-config.cfg 
+Jun 02 12:26:06.188 HYPERVISOR: exec_cmd: vm start ESW1 
+Jun 02 12:47:33.113 HYPERVISOR: exec_cmd: vm get_status ESW1 
+Jun 02 12:47:33.114 HYPERVISOR: exec_cmd: vm stop ESW1 
+Jun 02 12:47:33.277 VM: VM ESW1 shutdown.
+Jun 02 12:47:33.278 HYPERVISOR: exec_cmd: vm extract_config ESW1 
+Jun 02 12:47:34.969 HYPERVISOR: exec_cmd: vm get_status ESW1 
+Jun 02 12:47:34.970 HYPERVISOR: exec_cmd: vm extract_config ESW1 
+Jun 02 12:47:34.972 HYPERVISOR: exec_cmd: vm delete ESW1 
+Jun 02 12:47:34.972 VM: VM ESW1 destroyed.
+Jun 02 12:47:34.973 HYPERVISOR: exec_cmd: hypervisor stop 
+Jun 02 12:47:35.403 HYPERVISOR: Stopped.
+Jun 02 12:47:35.403 GENERAL: reset done.

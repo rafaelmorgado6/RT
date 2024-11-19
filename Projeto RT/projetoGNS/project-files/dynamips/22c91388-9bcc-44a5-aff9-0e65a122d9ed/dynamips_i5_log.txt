@@ -1,0 +1,48 @@
+Jun 13 17:29:32.013 HYPERVISOR: Release 0.2.17-x86/Windows (tag 2017072410)
+Jun 13 17:29:32.014 HYPERVISOR: Started on IP = localhost, TCP port = 56144.
+Jun 13 17:29:32.015 HYPERVISOR: exec_cmd: hypervisor version 
+Jun 13 17:29:32.015 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\rafam\OneDrive\Ambiente de Trabalho\RT\Projeto RT\projetoGNS\project-files\dynamips 
+Jun 13 17:29:32.015 GENERAL: working_dir=C:\Users\rafam\OneDrive\Ambiente de Trabalho\RT\Projeto RT\projetoGNS\project-files\dynamips
+Jun 13 17:29:32.015 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\rafam\OneDrive\Ambiente de Trabalho\RT\Projeto RT\projetoGNS\project-files\dynamips\14360bb1-ad01-41ff-af84-4effe8510c45 
+Jun 13 17:29:32.015 GENERAL: working_dir=C:\Users\rafam\OneDrive\Ambiente de Trabalho\RT\Projeto RT\projetoGNS\project-files\dynamips\14360bb1-ad01-41ff-af84-4effe8510c45
+Jun 13 17:29:32.015 HYPERVISOR: exec_cmd: vm create ESW2 4 c3725 
+Jun 13 17:29:32.016 VM: VM ESW2 created.
+Jun 13 17:29:32.016 HYPERVISOR: exec_cmd: vm set_con_tcp_port ESW2 5006 
+Jun 13 17:29:32.016 HYPERVISOR: exec_cmd: c3725 get_mac_addr ESW2 
+Jun 13 17:29:32.017 HYPERVISOR: exec_cmd: vm set_disk0 ESW2 1 
+Jun 13 17:29:32.017 HYPERVISOR: exec_cmd: vm set_exec_area ESW2 64 
+Jun 13 17:29:32.017 HYPERVISOR: exec_cmd: vm get_status ESW2 
+Jun 13 17:29:32.017 HYPERVISOR: exec_cmd: vm set_idle_pc ESW2 0x60236160 
+Jun 13 17:29:32.019 HYPERVISOR: exec_cmd: vm set_ios ESW2 C:/Users/rafam/GNS3/images/IOS/c3725-advipservicesk9-mz.124-21.image 
+Jun 13 17:29:32.019 HYPERVISOR: exec_cmd: c3725 set_mac_addr ESW2 c204.2044.0000 
+Jun 13 17:29:32.020 HYPERVISOR: exec_cmd: vm set_nvram ESW2 256 
+Jun 13 17:29:32.020 HYPERVISOR: exec_cmd: vm get_status ESW2 
+Jun 13 17:29:32.020 HYPERVISOR: exec_cmd: vm slot_add_binding ESW2 1 0 NM-16ESW 
+Jun 13 17:29:36.863 HYPERVISOR: exec_cmd: nio create_udp udp-91ec5142-54d5-46c4-893c-3e3ec584b90b 10030 127.0.0.1 10031 
+Jun 13 17:29:37.107 HYPERVISOR: exec_cmd: vm slot_add_nio_binding ESW2 1 0 udp-91ec5142-54d5-46c4-893c-3e3ec584b90b 
+Jun 13 17:29:37.107 HYPERVISOR: exec_cmd: vm get_status ESW2 
+Jun 13 17:29:37.169 HYPERVISOR: exec_cmd: nio create_udp udp-a2dc44f0-3663-4543-9953-7bd897acaec2 10036 127.0.0.1 10037 
+Jun 13 17:29:37.172 HYPERVISOR: exec_cmd: vm slot_add_nio_binding ESW2 1 1 udp-a2dc44f0-3663-4543-9953-7bd897acaec2 
+Jun 13 17:29:37.173 HYPERVISOR: exec_cmd: vm get_status ESW2 
+Jun 13 17:29:37.621 HYPERVISOR: exec_cmd: nio create_udp udp-853c1438-6b2b-4eeb-946b-943fd5f465cb 10052 127.0.0.1 10053 
+Jun 13 17:29:37.624 HYPERVISOR: exec_cmd: vm slot_add_nio_binding ESW2 1 5 udp-853c1438-6b2b-4eeb-946b-943fd5f465cb 
+Jun 13 17:29:37.624 HYPERVISOR: exec_cmd: vm get_status ESW2 
+Jun 13 17:29:38.008 HYPERVISOR: exec_cmd: nio create_udp udp-d72c7e2b-7893-4385-bf0d-1fa6c9006506 10066 127.0.0.1 10067 
+Jun 13 17:29:38.011 HYPERVISOR: exec_cmd: vm slot_add_nio_binding ESW2 1 2 udp-d72c7e2b-7893-4385-bf0d-1fa6c9006506 
+Jun 13 17:29:38.011 HYPERVISOR: exec_cmd: vm get_status ESW2 
+Jun 13 17:29:46.484 HYPERVISOR: exec_cmd: vm set_ghost_status ESW2 2 
+Jun 13 17:29:46.485 HYPERVISOR: exec_cmd: vm set_ghost_file ESW2 C:\Users\rafam\OneDrive\Ambiente de Trabalho\RT\Projeto RT\projetoGNS\project-files\dynamips\c3725-advipservicesk9-mz.124-21.image-128.ghost 
+Jun 13 17:29:46.485 HYPERVISOR: exec_cmd: vm get_status ESW2 
+Jun 13 17:29:46.486 HYPERVISOR: exec_cmd: vm set_config ESW2 configs\i4_startup-config.cfg 
+Jun 13 17:29:46.486 HYPERVISOR: exec_cmd: vm start ESW2 
+Jun 13 17:59:07.248 HYPERVISOR: exec_cmd: vm get_status ESW2 
+Jun 13 17:59:07.248 HYPERVISOR: exec_cmd: vm stop ESW2 
+Jun 13 17:59:07.436 VM: VM ESW2 shutdown.
+Jun 13 17:59:07.438 HYPERVISOR: exec_cmd: vm extract_config ESW2 
+Jun 13 17:59:09.325 HYPERVISOR: exec_cmd: vm get_status ESW2 
+Jun 13 17:59:09.327 HYPERVISOR: exec_cmd: vm extract_config ESW2 
+Jun 13 17:59:09.331 HYPERVISOR: exec_cmd: vm delete ESW2 
+Jun 13 17:59:09.331 VM: VM ESW2 destroyed.
+Jun 13 17:59:09.336 HYPERVISOR: exec_cmd: hypervisor stop 
+Jun 13 17:59:09.618 HYPERVISOR: Stopped.
+Jun 13 17:59:09.618 GENERAL: reset done.
